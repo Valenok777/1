@@ -2,6 +2,17 @@ from os import system # для очистки экрана
 
 user_choise = 0
 level = 0
+inv = []
+
+while user_choise not in (1, 2, 3, 4):
+    print("Вы можете взять с собой только два предмета\n1-меч\n2-щит\n3-нож\n4-веревку")
+    inv = input("")
+
+
+
+
+
+
 
 # камень
 while user_choise not in (1, 2, 3):
