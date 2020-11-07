@@ -1,11 +1,11 @@
-hours = 17
-minutes = 19
-seconds = 00
-print(hours, minutes, seconds sep=":")
+import turtle
+turtle.reset()
+turtle.shape("classic")
 
-print("Вася\nИванов")
+turtle.color(color)
+turtle.pendown()
+turtle.fd(10)
+turtle.penup()
+turtle.fd(10)
 
-print("I\'m cool")
-
-
-input(ДЛЯ ВЫХОДА НАЖМИТЕ ENTER)
+turtle.mainloop()
