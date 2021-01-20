@@ -13,13 +13,21 @@ player = player_controller = PlatformerController2d(
 	collision = True,
 	)
 
-surface = Entity(
-    position = (0, -2),
-    model = 'quad',
-    collider = 'box',
-    scale=(50,1),
-    color = color.green,
-	)
+tile_shift_x = 0
+for i in range(50):
+    tile_shift_y = -3
+    kolichestvo_kybikov_po_y = random.randint(2, 3)
+    for j in range(kolichestvo_kybikov_po_y):
+        tile = Entity(
+        position = (tile_shift_x, tile_shift_y),
+        model = 'quad',
+        collider = 'box',
+        scale=(1,1),
+        color = color.green,
+        )
+        tile_shift_y += 1
+    tile_shift_x += 1
+
 
 camera.add_script(SmoothFollow(target=player, offset=[0,5,-30], speed=40))
 
@@ -32,16 +40,6 @@ def input(key):
     if key == 'space':
         player.y += 1
         invoke(setattr, player, 'y', player.y-1, delay=.25)
-
-for i in range(11):
-    blok_1 = 0
-    for J in range(4):
-        blok = Entity(model = "quad",
-                      x = blok_1,
-                      y = random.randint(1, 8)
-                      )
-        blok_1 += 1
-
 
 
 # start running the game
