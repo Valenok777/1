@@ -107,6 +107,7 @@ body {
 	padding: 6rem;
 	display: flex;
 	background-color: #FFFFFF;
+
 }
 
 .section_thrid h2 {
@@ -121,14 +122,38 @@ body {
 	font-size: 21px;
 }
 
-.section_thrid article h2 {
-    color: #FFFFFF;
+.section_thrid article {
+	margin-bottom: 30px;
+    background-color: #3b4050;
+    padding: 1rem;
+}
+
+.section_thrid article h2 {    
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
+	text-align: center;
+	color: #FFFFFF;
 }
 
 .section_thrid article p {
-    color: #3B4050;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif; 
 	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.section_thrid_right {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.section_thrid_left {
+	flex-grow: 3;
+	flex-basis: 0;
+	padding-right: 80px;
+}
+
+.section_thrid_left img {
+	display: block;
+
 }
