@@ -1,19 +1,31 @@
 """
-1 - открыть файл т тзвечь обертку
+1 - открыть файл и извечь обертку
 2 - прочитать обертку и сохранить  в переменную
-3 - убрать из текста не буквы
+3 - все буквы заменить строчными
+4 - заменить ё на е
+5 - убрать из текста не буквы 
+6 - все предлоги сохрарить в переменную
+7 - убрать предлоги
 """
 
 import re 
 from collections import Counter
+import stop_words as sw
 
-with open(r"WWW.txt", encoding = "utf-8") as date:
+
+with open(r"Мастер и Маргарита.txt", encoding = "utf-8") as date:
     text = date.read()
 
 text = text.lower()
-edited_text = re.findall(r"[а-я]+", text)
 text = re.sub("ё", "е", text)
+#список
+edited_text = re.findall(r"[а-я]+", text)
+
+for i in edited_text:
+	if i in sw.stop_words:
+		edited_text.remove(i)
+
+
 resualt = dict(Counter(edited_text).most_common(20))
 
 print(resualt)
-
