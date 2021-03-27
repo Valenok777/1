@@ -10,8 +10,10 @@
 
 import re 
 from collections import Counter
-import stop_words as sw
+import stop_words_1 as sw
+import time
 
+time_start = time.time()
 
 with open(r"Мастер и Маргарита.txt", encoding = "utf-8") as date:
     text = date.read()
@@ -28,4 +30,7 @@ for i in edited_text:
 
 resualt = dict(Counter(edited_text).most_common(20))
 
+time_stop = time.time()
+
+print(round(time_stop - time_start))
 print(resualt)
