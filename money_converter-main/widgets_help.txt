@@ -1,0 +1,1 @@
+https://pythonworld.ru/gui/pyqt5-widgets.html
