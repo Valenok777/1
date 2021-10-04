@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox_op1">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>130</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>false</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>true</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_oper">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>130</y>
+      <width>241</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Дизьюнкция</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Коньюкция</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Инверсия</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Следование</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Эквивалентность</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Строгая дизьюнкция</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_op2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>130</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>false</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>true</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
